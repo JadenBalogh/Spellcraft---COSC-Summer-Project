@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spellcraft - COSC Summer Project 2", "Assembly-CSharp.csproj", "{DFBD8FB5-CE7C-0C9F-AC9B-80BFDD43E18B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFBD8FB5-CE7C-0C9F-AC9B-80BFDD43E18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBD8FB5-CE7C-0C9F-AC9B-80BFDD43E18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBD8FB5-CE7C-0C9F-AC9B-80BFDD43E18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBD8FB5-CE7C-0C9F-AC9B-80BFDD43E18B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
