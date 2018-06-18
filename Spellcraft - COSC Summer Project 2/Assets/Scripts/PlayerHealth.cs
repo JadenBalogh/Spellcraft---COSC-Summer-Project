@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     //TIP: Add a slider for enchanced UX.
 
-    public Slider healthBar;
+    public RectTransform healthBar;
 
     // Use this for initialization
     void Start()
@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
         MaxHealth = 100;
         CharacterHealth = MaxHealth;
 
-        healthBar.value = computeHealth();
+        healthBar.localScale = new Vector3(computeHealth(), 1f, 1f);
     }
 
     // Update is called once per frame
@@ -33,17 +33,17 @@ public class PlayerHealth : MonoBehaviour
     {
         if (CharacterHealth > 0) { 
         CharacterHealth -= damageLevel;
-        healthBar.value = computeHealth();
+            CharacterHealth = Mathf.Clamp(CharacterHealth, 0, MaxHealth);
+            healthBar.localScale = new Vector3 (computeHealth(),1f,1f);
     }
     else {
             KillPlayer();
     }
     }
 
-    int computeHealth(){
+    float computeHealth(){
         //this method computes health percentage.
-            return CharacterHealth / MaxHealth;
-
+        return (float)CharacterHealth / MaxHealth;
     }
 
     void KillPlayer(){
