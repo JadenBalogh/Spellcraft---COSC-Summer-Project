@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\GridController.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
     <None Include="Assets\Shaders\Hidden.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/user2/Desktop/GitHub /Spellcraft - COSC Summer Project 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
